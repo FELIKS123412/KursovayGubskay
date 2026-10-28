@@ -81,14 +81,14 @@
 Формула: $Q[i] = \ln\left(\frac{X[i]}{X[i-3]}\right)$
 
 - **Отсчёт $t = 4$ (пара с $t = 1$):**
-  - $\text{DSK}: Q[4] = \ln\left(\frac{48.15}{45.50}\right) = \ln(1.058242) \approx \mathbf{+0.0566}$  
-  - $\text{NET}: Q[4] = \ln\left(\frac{55.0}{55.6}\right) = \ln(0.989209) \approx \mathbf{-0.0109}$
-  - $\text{API}: Q[4] = \ln\left(\frac{31.6}{33.9}\right) = \ln(0.932153) \approx \mathbf{-0.0703}$
+   $\text{DSK}: Q[4] = \ln\left(\frac{48.15}{45.50}\right) = \ln(1.058242) \approx \mathbf{+0.0566}$  
+   $\text{NET}: Q[4] = \ln\left(\frac{55.0}{55.6}\right) = \ln(0.989209) \approx \mathbf{-0.0109}$
+   $\text{API}: Q[4] = \ln\left(\frac{31.6}{33.9}\right) = \ln(0.932153) \approx \mathbf{-0.0703}$
 
 - **Отсчёт $t = 5$ (пара с $t = 2$):**
-  - $\text{DSK}: Q[5] = \ln\left(\frac{52.90}{47.15}\right) = \ln(1.121951) \approx \mathbf{+0.1151}$  
-  - $\text{NET}: Q[5] = \ln\left(\frac{53.0}{53.6}\right) = \ln(0.988806) \approx \mathbf{-0.0113}$
-  - $\text{API}: Q[5] = \ln\left(\frac{30.9}{33.1}\right) = \ln(0.933535) \approx \mathbf{-0.0688}$
+   $\text{DSK}: Q[5] = \ln\left(\frac{52.90}{47.15}\right) = \ln(1.121951) \approx \mathbf{+0.1151}$  
+   $\text{NET}: Q[5] = \ln\left(\frac{53.0}{53.6}\right) = \ln(0.988806) \approx \mathbf{-0.0113}$
+   $\text{API}: Q[5] = \ln\left(\frac{30.9}{33.1}\right) = \ln(0.933535) \approx \mathbf{-0.0688}$
 
 ### Определение состояний и инцидентов
 
