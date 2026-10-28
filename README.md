@@ -18,7 +18,7 @@
   Если текущее $Q$ больше предыдущего и следующего ($Q[i] > Q[i-1]$ и $Q[i] > Q[i+1]$), состояние **«АНОМАЛИЯ»**, иначе **«НОРМА»**.
 - **Правило инцидента (Большинство):**  
   Инцидент возникает, если большинство присутствующих компонентов ($\ge 2$ из 3) находятся в проблемном состоянии:
-  $$\text{Incident}(t) = (S_{\text{DSK}}[t] \land S_{\text{NET}}[t]) \lor (S_{\text{DSK}}[t] \land S_{\text{API}}[t]) \lor (S_{\text{NET}}[t] \land S_{\text{API}}[t])$$
+  `$$\text{Incident}(t) = (S_{\text{DSK}}[t] \land S_{\text{NET}}[t]) \lor (S_{\text{DSK}}[t] \land S_{\text{API}}[t]) \lor (S_{\text{NET}}[t] \land S_{\text{API}}[t])$$`
 - **Структура Incident:**
   ```c
   typedef struct {
@@ -85,7 +85,6 @@
 
 - **Отсчёт $t = 5$ (пара с $t = 2$):**
   - $\text{DSK}: Q[5] = \ln\left(\frac{52.90}{47.15}\right) = \ln(1.121951) \approx \mathbf{+0.1151}$  
-    *(с базовым $46.0$: $\ln(52.9 / 46.0) \approx +0.1398$)*
   - $\text{NET}: Q[5] = \ln\left(\frac{53.0}{53.6}\right) = \ln(0.988806) \approx \mathbf{-0.0113}$
   - $\text{API}: Q[5] = \ln\left(\frac{30.9}{33.1}\right) = \ln(0.933535) \approx \mathbf{-0.0688}$
 
