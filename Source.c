@@ -13,7 +13,7 @@ typedef struct {
 } Incident;
 
 int main(void) {
-    setlocale(LC_ALL, "Russian");
+    setlocale(LC_CTYPE, "Russian");
 
     float dsk[POINTS_COUNT] = { 45.5f, 47.15f, 46.5f, 48.15f, 52.9f };
     float net[POINTS_COUNT] = { 55.6f, 53.6f, 57.0f, 55.0f, 53.0f };
@@ -32,10 +32,10 @@ int main(void) {
 
     int i;
 
-    printf("Контроль облачной инфраструктуры (Вариант 9, КТ1)\n\n");
+    printf("ГЉГ®Г­ГІГ°Г®Г«Гј Г®ГЎГ«Г Г·Г­Г®Г© ГЁГ­ГґГ°Г Г±ГІГ°ГіГЄГІГіГ°Г» (Г‚Г Г°ГЁГ Г­ГІ 9, ГЉГ’1)\n\n");
 
-    printf("Исходные данные телеметрии:\n");
-    printf("Отсчет\tDSK\tNET\tAPI\n");
+    printf("Г€Г±ГµГ®Г¤Г­Г»ГҐ Г¤Г Г­Г­Г»ГҐ ГІГҐГ«ГҐГ¬ГҐГІГ°ГЁГЁ:\n");
+    printf("ГЋГІГ±Г·ГҐГІ\tDSK\tNET\tAPI\n");
     for (i = 0; i < POINTS_COUNT; i++) {
         printf("%d\t%.2f\t%.1f\t%.1f\n", i + 1, dsk[i], net[i], api[i]);
     }
@@ -53,8 +53,8 @@ int main(void) {
         }
     }
 
-    printf("Логарифм отношения Q при k = %d:\n", K_PARAM);
-    printf("Отсчет\tQ(DSK)\t\tQ(NET)\t\tQ(API)\n");
+    printf("Г‹Г®ГЈГ Г°ГЁГґГ¬ Г®ГІГ­Г®ГёГҐГ­ГЁГї Q ГЇГ°ГЁ k = %d:\n", K_PARAM);
+    printf("ГЋГІГ±Г·ГҐГІ\tQ(DSK)\t\tQ(NET)\t\tQ(API)\n");
     for (i = K_PARAM; i < POINTS_COUNT; i++) {
         printf("%d\t%+7.4f\t\t%+7.4f\t\t%+7.4f\n", i + 1, q_dsk[i], q_net[i], q_api[i]);
     }
@@ -91,23 +91,23 @@ int main(void) {
         }
     }
 
-    printf("Состояние компонентов (правило локальной аномалии):\n");
-    printf("Отсчет\tDSK\t\tNET\t\tAPI\n");
+    printf("Г‘Г®Г±ГІГ®ГїГ­ГЁГҐ ГЄГ®Г¬ГЇГ®Г­ГҐГ­ГІГ®Гў (ГЇГ°Г ГўГЁГ«Г® Г«Г®ГЄГ Г«ГјГ­Г®Г© Г Г­Г®Г¬Г Г«ГЁГЁ):\n");
+    printf("ГЋГІГ±Г·ГҐГІ\tDSK\t\tNET\t\tAPI\n");
     for (i = 0; i < POINTS_COUNT; i++) {
         printf("%d\t%s\t%s\t%s\n",
             i + 1,
-            state_dsk[i] ? "АНОМАЛИЯ" : "НОРМА  ",
-            state_net[i] ? "АНОМАЛИЯ" : "НОРМА  ",
-            state_api[i] ? "АНОМАЛИЯ" : "НОРМА  ");
+            state_dsk[i] ? "ГЂГЌГЋГЊГЂГ‹Г€Гџ" : "ГЌГЋГђГЊГЂ  ",
+            state_net[i] ? "ГЂГЌГЋГЊГЂГ‹Г€Гџ" : "ГЌГЋГђГЊГЂ  ",
+            state_api[i] ? "ГЂГЌГЋГЊГЂГ‹Г€Гџ" : "ГЌГЋГђГЊГЂ  ");
     }
     printf("\n");
 
-    printf("Журнал инцидентов (правило Большинство):\n");
+    printf("Г†ГіГ°Г­Г Г« ГЁГ­Г¶ГЁГ¤ГҐГ­ГІГ®Гў (ГЇГ°Г ГўГЁГ«Г® ГЃГ®Г«ГјГёГЁГ­Г±ГІГўГ®):\n");
     if (incident_count == 0) {
-        printf("Инцидентов не обнаружено.\n");
+        printf("Г€Г­Г¶ГЁГ¤ГҐГ­ГІГ®Гў Г­ГҐ Г®ГЎГ­Г Г°ГіГ¦ГҐГ­Г®.\n");
     } else {
         for (i = 0; i < incident_count; i++) {
-            printf("Отсчет %d: зафиксирован инцидент (тип %d, проблемные узлы: %d и %d)\n",
+            printf("ГЋГІГ±Г·ГҐГІ %d: Г§Г ГґГЁГЄГ±ГЁГ°Г®ГўГ Г­ ГЁГ­Г¶ГЁГ¤ГҐГ­ГІ (ГІГЁГЇ %d, ГЇГ°Г®ГЎГ«ГҐГ¬Г­Г»ГҐ ГіГ§Г«Г»: %d ГЁ %d)\n",
                 incidents[i].time, incidents[i].type, incidents[i].first, incidents[i].second);
         }
     }
