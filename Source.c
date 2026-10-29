@@ -13,7 +13,7 @@ typedef struct {
 } Incident;
 
 int main(void) {
-    setlocale(LC_CTYPE, "Russian");
+    setlocale(LC_CTYPE, "RUS");
 
     float dsk[POINTS_COUNT] = { 45.5f, 47.15f, 46.5f, 48.15f, 52.9f };
     float net[POINTS_COUNT] = { 55.6f, 53.6f, 57.0f, 55.0f, 53.0f };
