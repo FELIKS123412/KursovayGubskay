@@ -1,85 +1,61 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <locale.h>
 #include <stdio.h>
+#include <locale.h>
 #include <math.h>
 
 int analiz(const char* name);
 
-int main()
+int main(void)
 {
-    setlocale(LC_ALL, ".utf-8");
-
+    setlocale(LC_ALL, "RUS");
     analiz("DSK");
-    analiz("API");
     analiz("NET");
+    analiz("API");
 
     return 0;
 }
 
 int analiz(const char* name)
 {
-    double x[6];
-    double q[6];
-    int run = 0;
-    int warning = 0;
+    printf("%s:\n", name);
 
-    printf("\n%s:\n", name);
+    double x1, x2, x3, x4, x5;
+    double q1, q2, q3, q4, q5;
 
-    for (int i = 1; i <= 5; i++)
-    {
-        printf("X[%d] = ", i);
-
-        if (scanf("%lf", &x[i]) != 1 || x[i] <= 0)
-        {
-            printf("Ошибка ввода!\n");
-            return 1;
-        }
-    }
-
-    q[4] = log(x[4] / x[1]);
-    q[5] = log(x[5] / x[2]);
-
-    printf("\nQ = {%.4f, %.4f}\n\n", q[4], q[5]);
+    printf("X[1] = ");
+    scanf("%lf", &x1);
+    printf("X[2] = ");
+    scanf("%lf", &x2);
+    printf("X[3] = ");
+    scanf("%lf", &x3);
+    printf("X[4] = ");
+    scanf("%lf", &x4);
+    printf("X[5] = ");
+    scanf("%lf", &x5);
 
 
-    if (q[4] > 1.0)
-    {
-        run++;
-        printf("Q[4] = %.4f норма для двух измерений\n", q[4]);
-    }
+    q1 = 0.0;
+    q2 = (x1 != 0.0) ? log(x2 / x1) : 0.0;
+    q3 = (x2 != 0.0) ? log(x3 / x2) : 0.0;
+    q4 = (x3 != 0.0) ? log(x4 / x3) : 0.0;
+    q5 = (x4 != 0.0) ? log(x5 / x4) : 0.0;
+
+    if (q2 > q1 && q2 > q3)
+        printf("Q[2] = %.2f АНОМАЛИЯ\n", q2);
     else
-    {
-        run = 0;
-        printf("Q[4] = %.4f НОРМА\n", q[4]);
-    }
+        printf("Q[2] = %.2f НОРМА\n", q2);
 
-    if (q[5] > 1.0)
-    {
-        run++;
 
-        if (run >= 2)
-        {
-            warning = 1;
-            printf("Q[5] = %.4f ПРЕДУПРЕЖДЕНИЕ\n", q[5]);
-        }
-        else
-        {
-            printf("Q[5] = %.4f норма для двух измерений\n", q[5]);
-        }
-    }
+    if (q3 > q2 && q3 > q4)
+        printf("Q[3] = %.2f АНОМАЛИЯ\n", q3);
     else
-    {
-        run = 0;
-        printf("Q[5] = %.4f НОРМА\n", q[5]);
-    }
+        printf("Q[3] = %.2f НОРМА\n", q3);
 
-
-    if (warning)
-        printf("Состояние %s = ПРЕДУПРЕЖДЕНИЕ\n", name);
+    if (q4 > q3 && q4 > q5)
+        printf("Q[4] = %.2f АНОМАЛИЯ\n", q4);
     else
-        printf("Состояние %s = НОРМА\n", name);
+        printf("Q[4] = %.2f НОРМА\n", q4);
 
     printf("\n");
-
     return 0;
 }
