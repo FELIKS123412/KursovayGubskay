@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1485" height="1210" viewBox="0 0 1485 1210">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#000000"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1485" height="1210" fill="#ffffff"/>
+  <path d="M 365.0 76.0 L 365.0 105.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 365.0 177.0 L 365.0 208.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 365.0 262.0 L 365.0 295.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 255.0 332.0 L 207.0 332.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="214.0" y="307.0" width="36" height="16" fill="#ffffff"/>
+  <text x="232.0" y="319.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Да</text>
+  <path d="M 125.0 359.0 L 125.0 400.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 365.0 369.0 L 365.0 400.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="367.0" y="373.0" width="36" height="16" fill="#ffffff"/>
+  <text x="385.0" y="385.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Нет</text>
+  <path d="M 465.0 434.0 L 553.0 434.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="482.0" y="411.0" width="36" height="16" fill="#ffffff"/>
+  <text x="500.0" y="423.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Да</text>
+  <path d="M 827.0 434.0 L 1440.0 434.0 L 1440.0 235.0 L 482.0 235.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 365.0 468.0 L 365.0 498.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="367.0" y="471.0" width="36" height="16" fill="#ffffff"/>
+  <text x="385.0" y="483.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Нет</text>
+  <path d="M 465.0 532.0 L 545.0 532.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="482.0" y="509.0" width="36" height="16" fill="#ffffff"/>
+  <text x="500.0" y="521.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Да</text>
+  <path d="M 800.0 532.0 L 863.0 532.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 1067.0 532.0 L 1440.0 532.0 L 1440.0 235.0 L 482.0 235.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 365.0 566.0 L 365.0 596.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="367.0" y="569.0" width="36" height="16" fill="#ffffff"/>
+  <text x="385.0" y="581.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Нет</text>
+  <path d="M 465.0 630.0 L 553.0 630.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="482.0" y="607.0" width="36" height="16" fill="#ffffff"/>
+  <text x="500.0" y="619.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Да</text>
+  <path d="M 792.0 630.0 L 863.0 630.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 1067.0 630.0 L 1440.0 630.0 L 1440.0 235.0 L 482.0 235.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 365.0 664.0 L 365.0 698.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="367.0" y="669.0" width="36" height="16" fill="#ffffff"/>
+  <text x="385.0" y="681.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Нет</text>
+  <path d="M 465.0 732.0 L 525.0 732.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="477.0" y="709.0" width="36" height="16" fill="#ffffff"/>
+  <text x="495.0" y="721.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Да</text>
+  <path d="M 622.5 766.0 L 622.5 812.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="627.0" y="777.0" width="36" height="16" fill="#ffffff"/>
+  <text x="645.0" y="789.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Нет</text>
+  <path d="M 622.5 866.0 L 622.0 892.0 L 1440.0 892.0 L 1440.0 235.0 L 482.0 235.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 720.0 732.0 L 780.0 732.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="730.0" y="709.0" width="36" height="16" fill="#ffffff"/>
+  <text x="748.0" y="721.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Да</text>
+  <path d="M 1055.0 732.0 L 1110.0 732.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 1247.5 772.0 L 1247.5 812.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 1372.0 839.0 L 1440.0 839.0 L 1440.0 235.0 L 482.0 235.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 365.0 766.0 L 365.0 918.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="367.0" y="829.0" width="36" height="16" fill="#ffffff"/>
+  <text x="385.0" y="841.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Нет</text>
+  <path d="M 465.0 952.0 L 553.0 952.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="482.0" y="929.0" width="36" height="16" fill="#ffffff"/>
+  <text x="500.0" y="941.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Да</text>
+  <path d="M 807.0 952.0 L 1440.0 952.0 L 1440.0 235.0 L 482.0 235.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 365.0 986.0 L 365.0 1016.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="367.0" y="989.0" width="36" height="16" fill="#ffffff"/>
+  <text x="385.0" y="1001.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Нет</text>
+  <path d="M 465.0 1050.0 L 553.0 1050.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="482.0" y="1027.0" width="36" height="16" fill="#ffffff"/>
+  <text x="500.0" y="1039.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Да</text>
+  <path d="M 807.0 1050.0 L 1440.0 1050.0 L 1440.0 235.0 L 482.0 235.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 365.0 1084.0 L 365.0 1122.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="367.0" y="1089.0" width="36" height="16" fill="#ffffff"/>
+  <text x="385.0" y="1101.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000">Нет</text>
+  <path d="M 472.0 1149.0 L 1440.0 1149.0 L 1440.0 235.0 L 482.0 235.0" fill="none" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="310" y="30" width="110" height="46" rx="23.0" ry="23.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="365.0" y="57.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Начало</text>
+  <rect x="235" y="105" width="260" height="72" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="365.0" y="128.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Инициализация:</text>
+  <text x="365.0" y="145.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">nodes (DSK, NET, API), k = 3</text>
+  <text x="365.0" y="162.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">source = 0, analyzed = 0</text>
+  <polygon points="256.0,208.0 490.0,208.0 474.0,262.0 240.0,262.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="365.0" y="231.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Вывести панель и меню,</text>
+  <text x="365.0" y="248.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">ввести команду cmd</text>
+  <polygon points="365.0,295.0 475.0,332.0 365.0,369.0 255.0,332.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="365.0" y="328.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">cmd = 0</text>
+  <text x="365.0" y="345.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">или EOF?</text>
+  <polygon points="51.0,305.0 215.0,305.0 199.0,359.0 35.0,359.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="125.0" y="328.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Вывести:</text>
+  <text x="125.0" y="345.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Работа завершена</text>
+  <rect x="70" y="400" width="110" height="46" rx="23.0" ry="23.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="125.0" y="427.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Конец</text>
+  <polygon points="365.0,400.0 465.0,434.0 365.0,468.0 265.0,434.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="365.0" y="438.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">cmd = 1?</text>
+  <polygon points="561.0,407.0 835.0,407.0 819.0,461.0 545.0,461.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="690.0" y="430.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Ввести шаг k,</text>
+  <text x="690.0" y="447.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">проверить 1 &lt;= k &lt; 100</text>
+  <polygon points="365.0,498.0 465.0,532.0 365.0,566.0 265.0,532.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="365.0" y="536.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">cmd = 2?</text>
+  <rect x="545" y="502" width="255" height="60" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="672.5" y="528.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Загрузить набор Варианта 9</text>
+  <text x="672.5" y="545.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">(5 отсчетов, 17 измерений)</text>
+  <polygon points="871.0,505.0 1075.0,505.0 1059.0,559.0 855.0,559.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="965.0" y="528.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Вывести исходные</text>
+  <text x="965.0" y="545.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">ряды телеметрии</text>
+  <polygon points="365.0,596.0 465.0,630.0 365.0,664.0 265.0,630.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="365.0" y="634.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">cmd = 3?</text>
+  <polygon points="561.0,603.0 800.0,603.0 784.0,657.0 545.0,657.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="672.5" y="626.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Ввести n и ряды</text>
+  <text x="672.5" y="643.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">DSK, NET, API</text>
+  <polygon points="871.0,603.0 1075.0,603.0 1059.0,657.0 855.0,657.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="965.0" y="626.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Проверить ввод,</text>
+  <text x="965.0" y="643.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">вывести ряды</text>
+  <polygon points="365.0,698.0 465.0,732.0 365.0,766.0 265.0,732.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="365.0" y="736.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">cmd = 4?</text>
+  <polygon points="622.5,698.0 720.0,732.0 622.5,766.0 525.0,732.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="622.5" y="736.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">source != пусто?</text>
+  <polygon points="521.0,812.0 740.0,812.0 724.0,866.0 505.0,866.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="622.5" y="835.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Вывести сообщение</text>
+  <text x="622.5" y="852.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">о нехватке данных</text>
+  <rect x="780" y="692" width="275" height="80" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="917.5" y="719.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Проход 1 (i = 0..len-1): при i &lt; k</text>
+  <text x="917.5" y="736.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">пропуск; иначе /0, ln&lt;=0, NaN</text>
+  <text x="917.5" y="753.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">и расчет Q[i] = ln(X[i]/X[i-k])</text>
+  <rect x="1110" y="692" width="275" height="80" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="1247.5" y="719.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Проход 2: Q[i]&gt;Q[i-1] &amp;&amp; Q[i]&gt;Q[i+1]</text>
+  <text x="1247.5" y="736.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">(локальная аномалия) и поиск</text>
+  <text x="1247.5" y="753.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">инцидентов (большинство &gt;= 2 из 3)</text>
+  <polygon points="1131.0,812.0 1380.0,812.0 1364.0,866.0 1115.0,866.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="1247.5" y="835.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Вывести таблицы узлов, сводку,</text>
+  <text x="1247.5" y="852.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">ошибки и журнал инцидентов</text>
+  <polygon points="365.0,918.0 465.0,952.0 365.0,986.0 265.0,952.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="365.0" y="956.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">cmd = 5?</text>
+  <polygon points="561.0,925.0 815.0,925.0 799.0,979.0 545.0,979.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="680.0" y="948.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">При наличии расчета</text>
+  <text x="680.0" y="965.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">вывести журнал инцидентов</text>
+  <polygon points="365.0,1016.0 465.0,1050.0 365.0,1084.0 265.0,1050.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="365.0" y="1054.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">cmd = 6?</text>
+  <polygon points="561.0,1023.0 815.0,1023.0 799.0,1077.0 545.0,1077.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="680.0" y="1046.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">При наличии данных</text>
+  <text x="680.0" y="1063.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">вывести исходные ряды</text>
+  <polygon points="266.0,1122.0 480.0,1122.0 464.0,1176.0 250.0,1176.0" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  <text x="365.0" y="1145.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Вывести:</text>
+  <text x="365.0" y="1162.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000000">Неизвестная команда</text>
+</svg>
