@@ -70,7 +70,6 @@ typedef struct {
     int second;
 } Incident;
 
-/* Прототипы функций */
 void flush_stdin_line(void);
 void init_nodes(NodeSeries nodes[NODE_COUNT]);
 int fill_variant_preset(NodeSeries nodes[NODE_COUNT]);
@@ -212,14 +211,12 @@ int main(void) {
     return 0;
 }
 
-/* Очистка остатка строки в буфере стандартного ввода */
 void flush_stdin_line(void) {
     int ch = 0;
     while ((ch = getchar()) != '\n' && ch != EOF) {
     }
 }
 
-/* Начальная инициализация массивов измерений трех узлов */
 void init_nodes(NodeSeries nodes[NODE_COUNT]) {
     const char* tags[NODE_COUNT] = { "DSK", "NET", "API" };
     int idx = 0;
@@ -238,7 +235,6 @@ void init_nodes(NodeSeries nodes[NODE_COUNT]) {
     }
 }
 
-/* Загрузка всех 17 измерений контрольного набора варианта 9 (упорядочены по отсчетам) */
 int fill_variant_preset(NodeSeries nodes[NODE_COUNT]) {
     const int dsk_ticks[7] = { 1, 2, 2, 3, 4, 4, 5 };
     const float dsk_vals[7] = { 45.5f, 48.3f, 46.0f, 46.5f, 47.0f, 49.3f, 52.9f };
@@ -271,7 +267,6 @@ int fill_variant_preset(NodeSeries nodes[NODE_COUNT]) {
     return 5;
 }
 
-/* Интерактивный ввод телеметрии по отсчетам (по одному значению на каждый узел) */
 int read_manual_telemetry(NodeSeries nodes[NODE_COUNT], int cap) {
     int count = 0;
     int i = 0;
@@ -320,7 +315,6 @@ int read_manual_telemetry(NodeSeries nodes[NODE_COUNT], int cap) {
     return count;
 }
 
-/* Запрос и проверка нового шага сравнения k */
 int ask_step_k(int current_k, int max_len, int has_data) {
     int candidate = 0;
     int rc = 0;
@@ -347,7 +341,6 @@ int ask_step_k(int current_k, int max_len, int has_data) {
     return candidate;
 }
 
-/* Безопасное вычисление Q = ln(curr_val / prev_val) с проверкой /0, ln<=0 и конечности */
 CalcCode evaluate_log_ratio(float curr_val, float prev_val, float* out_q) {
     float ratio = 0.0f;
     float res = 0.0f;
@@ -380,7 +373,6 @@ CalcCode evaluate_log_ratio(float curr_val, float prev_val, float* out_q) {
     return CALC_VALID;
 }
 
-/* Определение состояния измерения по правилу локальной аномалии (Q[i] > Q[i-1] && Q[i] > Q[i+1]) */
 NodeStatus classify_sample(const Sample items[], int pos, int len) {
     if (pos < 0 || pos >= len) {
         return NODE_FAULT;
@@ -394,12 +386,10 @@ NodeStatus classify_sample(const Sample items[], int pos, int len) {
         return NODE_FAULT;
     }
 
-    /* Крайние элементы не имеют пары соседей */
     if (pos == 0 || pos == len - 1) {
         return NODE_OK;
     }
 
-    /* Оба соседних Q должны быть корректно вычислены */
     if (items[pos - 1].code != CALC_VALID || items[pos + 1].code != CALC_VALID) {
         return NODE_OK;
     }
@@ -411,7 +401,6 @@ NodeStatus classify_sample(const Sample items[], int pos, int len) {
     return NODE_OK;
 }
 
-/* Двухпроходная обработка временного ряда узла: 1) расчет Q, 2) классификация состояний */
 int process_node_series(NodeSeries* series, int step_k) {
     int i = 0;
     int faults = 0;
@@ -438,7 +427,6 @@ int process_node_series(NodeSeries* series, int step_k) {
     return faults;
 }
 
-/* Агрегированное состояние узла на отсчете tick (учитывает несколько замеров на одном отсчете) */
 NodeStatus node_status_at_tick(const NodeSeries* series, int tick) {
     int i = 0;
     int seen = 0;
@@ -462,7 +450,6 @@ NodeStatus node_status_at_tick(const NodeSeries* series, int tick) {
     return had_fault ? NODE_FAULT : NODE_OK;
 }
 
-/* Логическое правило инцидента большинства: (A && B) || (A && C) || (B && C) */
 int majority_rule(NodeStatus dsk_st, NodeStatus net_st, NodeStatus api_st) {
     int a = (dsk_st == NODE_ANOMALY);
     int b = (net_st == NODE_ANOMALY);
@@ -478,7 +465,6 @@ int majority_rule(NodeStatus dsk_st, NodeStatus net_st, NodeStatus api_st) {
     return 0;
 }
 
-/* Сбор инцидентов по отсчетам 1..max_tick в массив структур Incident */
 int detect_incidents(const NodeSeries nodes[NODE_COUNT], int max_tick, Incident log_buf[]) {
     int tick = 0;
     int total = 0;
@@ -515,7 +501,6 @@ int detect_incidents(const NodeSeries nodes[NODE_COUNT], int max_tick, Incident 
     return total;
 }
 
-/* Наибольшая длина ряда среди трех компонентов */
 int longest_series_len(const NodeSeries nodes[NODE_COUNT]) {
     int best = 0;
     int i = 0;
@@ -528,7 +513,6 @@ int longest_series_len(const NodeSeries nodes[NODE_COUNT]) {
     return best;
 }
 
-/* Текстовая метка состояния узла */
 const char* status_caption(NodeStatus st) {
     if (st == NODE_ANOMALY) {
         return "АНОМАЛИЯ";
@@ -542,7 +526,6 @@ const char* status_caption(NodeStatus st) {
     return "НОРМА";
 }
 
-/* Имя узла по его числовому индексу */
 const char* node_tag_by_id(int id) {
     if (id == NODE_DSK) {
         return "DSK";
@@ -556,7 +539,6 @@ const char* node_tag_by_id(int id) {
     return "-";
 }
 
-/* Заголовок программы */
 void render_banner(void) {
     printf("====================================================================\n");
     printf("  СИСТЕМА МОНИТОРИНГА ОБЛАЧНОЙ ИНФРАСТРУКТУРЫ  |  Вариант 9 (КТ2)\n");
@@ -564,7 +546,6 @@ void render_banner(void) {
     printf("====================================================================\n\n");
 }
 
-/* Вывод панели текущего состояния и интерактивного меню */
 void render_menu(DataSource src, int max_tick, const NodeSeries nodes[NODE_COUNT], int step_k, int analyzed) {
     const char* src_name = "не выбран";
     int total_samples = nodes[NODE_DSK].len + nodes[NODE_NET].len + nodes[NODE_API].len;
@@ -588,7 +569,6 @@ void render_menu(DataSource src, int max_tick, const NodeSeries nodes[NODE_COUNT
     printf("  [0] Выход из программы\n");
 }
 
-/* Вывод загруженных исходных рядов телеметрии */
 void render_raw_series(const NodeSeries nodes[NODE_COUNT]) {
     int idx = 0;
     int j = 0;
@@ -606,7 +586,6 @@ void render_raw_series(const NodeSeries nodes[NODE_COUNT]) {
     printf("\n");
 }
 
-/* Табличный отчет по одному узлу с отображением пары X[i] и X[i-k] */
 void render_node_table(const NodeSeries* series, int step_k) {
     int i = 0;
 
@@ -639,7 +618,6 @@ void render_node_table(const NodeSeries* series, int step_k) {
     printf("  +----+-------+----------+----------+----------------+----------+\n");
 }
 
-/* Сводная таблица состояний узлов по отсчетам времени */
 void render_timeline_summary(const NodeSeries nodes[NODE_COUNT], int max_tick) {
     int t = 0;
     NodeStatus s0 = NODE_OK;
@@ -664,7 +642,6 @@ void render_timeline_summary(const NodeSeries nodes[NODE_COUNT], int max_tick) {
     printf("  +-------+----------+----------+----------+----------+\n");
 }
 
-/* Вывод таблицы зарегистрированных инцидентов */
 void render_incident_table(const Incident log_buf[], int inc_total) {
     int i = 0;
 
