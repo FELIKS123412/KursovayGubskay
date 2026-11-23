@@ -85,8 +85,6 @@
 
 ![Блок-схема КТ2](Kursach_KT2_AlgSchema.svg)
 
-*Исходник схемы для draw.io: [Kursach_KT2_AlgSchema.drawio](Kursach_KT2_AlgSchema.drawio)*
-
 ---
 
 ## 2. Контрольный пример: ручной расчёт
